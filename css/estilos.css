@@ -558,3 +558,44 @@ color:white;
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 1800px) { 
+
+    .linksheader2 {        
+        font-size: 15px;        
+        
+    }
+}
+
+@media only screen and (max-width: 1515px) { 
+
+    .linksheader2 {        
+        font-size: 12px;        
+        
+    }
+}
+
+@media only screen and (max-width: 1277px) { 
+
+    .linksheader2 {
+       display: none; 
+    }
+
+    .linksheader1 {
+        list-style-type: none;
+        padding: 5%;
+        background-color: rgba(52,57,63,255);
+        font-size: 15px;
+        margin-bottom: 0px;
+      }
+
+    .navbar {
+        text-decoration: none;
+        display: block;
+        margin: 30px 30px;
+        background-color: rgba(52,57,63,255);
+        padding: 0%;
+        font-size: 12px;
+    }
+
+}
