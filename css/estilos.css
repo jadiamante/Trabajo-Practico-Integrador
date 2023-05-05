@@ -380,7 +380,7 @@ color:white;
         font-size: 20px;
     }
 
-   /* .btn-outline-light {
+   .btn-outline-light {
         font-size: 20px;
         margin-left: 0%;
     }
@@ -388,11 +388,13 @@ color:white;
     .btn-success {
         font-size: 20px;
     }
-     */
+    
 
 }
 
-@media only screen and (max-width: 916px) {
+
+
+@media only screen and (max-width: 957px) {
 
     .mensaje h1 {
          font-size: 30px;
@@ -400,9 +402,18 @@ color:white;
       .texto h4 {
          font-size: 18px;
      }
+
+     .btn-outline-light {
+        font-size: 18px;
+        margin-left: 0%;
+    }
+
+    .btn-success {
+        font-size: 18px;
+    }
 }
 
-@media only screen and (max-width: 825px) {
+@media only screen and (max-width: 883px) {
 
     .mensaje h1 {
          font-size: 30px;
@@ -410,6 +421,14 @@ color:white;
       .texto h4 {
          font-size: 16px;
      }
+     .btn-outline-light {
+        font-size: 14px;
+        margin-left: 0%;
+    }
+
+    .btn-success {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -436,7 +455,7 @@ color:white;
         }
         .texto h4 {
             font-weight: normal;
-            font-size: 15px;
+            font-size: 14px;
         }
 
 .mensaje .buttons {
@@ -542,12 +561,12 @@ color:white;
     }
 
     .btn-outline-light {
-        font-size: 15px;
+        font-size: 14px;
         margin-left: 0%;
     }
 
     .btn-success {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .container {
