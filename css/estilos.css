@@ -328,6 +328,90 @@ color:white;
     display: none;
 }
 
+
+@media only screen and (max-width: 1800px) { 
+
+    .linksheader2 {        
+        font-size: 20px;        
+        
+    }
+}
+
+@media only screen and (max-width: 1515px) { 
+
+    .linksheader2 {        
+        font-size: 17px;        
+    }
+        
+    
+}
+
+@media only screen and (max-width: 1277px) { 
+
+    .linksheader2 {
+       display: none; 
+    }
+
+    .linksheader1 {
+        list-style-type: none;
+        padding: 5%;
+        background-color: rgba(52,57,63,255);
+        font-size: 15px;
+        margin-bottom: 0px;
+      }
+
+    .navbar {
+        text-decoration: none;
+        display: block;
+        margin: 30px 30px;
+        background-color: rgba(52,57,63,255);
+        padding: 0%;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 1068px) {
+
+   .mensaje h1 {
+        font-size: 34px;
+     }   
+     .texto h4 {
+        font-size: 20px;
+    }
+
+   /* .btn-outline-light {
+        font-size: 20px;
+        margin-left: 0%;
+    }
+
+    .btn-success {
+        font-size: 20px;
+    }
+     */
+
+}
+
+@media only screen and (max-width: 916px) {
+
+    .mensaje h1 {
+         font-size: 30px;
+      }   
+      .texto h4 {
+         font-size: 18px;
+     }
+}
+
+@media only screen and (max-width: 825px) {
+
+    .mensaje h1 {
+         font-size: 30px;
+      }   
+      .texto h4 {
+         font-size: 16px;
+     }
+}
+
 @media only screen and (max-width: 768px) {
 
     .mensaje {
@@ -559,43 +643,3 @@ color:white;
     }
 }
 
-@media only screen and (max-width: 1800px) { 
-
-    .linksheader2 {        
-        font-size: 20px;        
-        
-    }
-}
-
-@media only screen and (max-width: 1515px) { 
-
-    .linksheader2 {        
-        font-size: 17px;        
-        
-    }
-}
-
-@media only screen and (max-width: 1277px) { 
-
-    .linksheader2 {
-       display: none; 
-    }
-
-    .linksheader1 {
-        list-style-type: none;
-        padding: 5%;
-        background-color: rgba(52,57,63,255);
-        font-size: 15px;
-        margin-bottom: 0px;
-      }
-
-    .navbar {
-        text-decoration: none;
-        display: block;
-        margin: 30px 30px;
-        background-color: rgba(52,57,63,255);
-        padding: 0%;
-        font-size: 12px;
-    }
-
-}
