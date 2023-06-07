@@ -1,3 +1,6 @@
+const clickresumen = document.querySelector('#btnresumen');
+const clickborrar = document.querySelector('#btnborrar');
+
 // Método Resumen
 
 function montoPagar () {
@@ -9,6 +12,44 @@ let categoria = document.getElementById("select-tickets").value;
 
 const valor = 200;
 valorTotal = 0;
+    
+    // Validacion de campos en formulario
+    let nombre = document.getElementById("nombre");
+    let apellido = document.getElementById("apellido");
+    let email = document.getElementById("email");
+    const emailValido=email => {
+        return /^[^/s@]+@[^/s@]+\.[^/s@]+$/.test(email);
+    }
+
+    if (nombre.value==="") {
+        alert('Por favor, ingrese nombre');
+        nombre.focus();
+        return;
+    }
+
+    if (apellido.value==="") {
+        alert('Por favor, ingrese apellido');
+        apellido.focus();
+        return;
+    }
+
+    if (email.value==="") {
+        alert('Por favor, ingrese email');
+        email.focus();
+        return;
+    }
+
+    if (!emailValido(email.value)){
+        alert('Por favor, ingrese un correo electronico válido');
+        return;
+    }
+    
+    if (cantidad <= 0 ) {
+        alert('Por favor, ingrese una cantidad valida');
+        document.getElementById(input-cantidad).focus();
+        return;
+    }
+    
 
     if (cantidad > 0 && categoria > 0 && categoria <= 3) {
 
@@ -29,21 +70,24 @@ valorTotal = 0;
         } 
     } else {
 
-        alert("Error! No se ha completado un campo o se ha ingresado un valor inválido");
+        alert("Error! No se ha seleccionado una categoria o se ha ingresado un valor inválido en cantidad");
+        return;
     }  
     
-    document.getElementById("input-total-pagar").value='Monto total a pagar: $' + valorTotal;
+    document.getElementById("input-total-pagar").value='Total a pagar: $' + valorTotal;
+    return;
 }
 
 // Método borrar
 
 function borrar () {
+    event.preventDefault();    
     // form.reset();
-    document.getElementById("miForm").reset();
+    document.getElementById("formulario-tickets").reset();
+    return;
 }
 
-// Esperando que presionen los botones
-const clickresumen = document.querySelector('#btnresumen');
+// Esperando a los botones
+
 clickresumen.addEventListener('click', montoPagar);
-const clickborrar = document.querySelector('btnborrar');
 clickborrar.addEventListener('click', borrar);
